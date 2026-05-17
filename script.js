@@ -14,6 +14,5 @@ document.getElementById("button").addEventListener("click", function (e) {
 		params.set("year",year);
 	const finalUrl =  URL + ((name || year) ? "?": "")+ params.toString();
 	myUrl.textContent = finalUrl;
-	window.location.search = finalUrl;
 	
 })
