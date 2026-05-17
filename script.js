@@ -8,7 +8,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 	const params = new URLSearchParams(window.location.search);
 	params.set("name",name);
 	params.set("year",year);
-	myUrl.textContent = params.toString();
+	myUrl.textContent = window.location.search;
 	window.location.search = params.toString();
 	
 })
