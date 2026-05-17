@@ -1,5 +1,5 @@
 // your code here
-	const myUrl = document.getElementById("myUrl");
+	const myUrl = document.getElementById("url");
 	myUrl.textContent = window.location.origin + window.location.pathname
 document.getElementById("myForm").addEventListener("submit", function (e) {
 	e.preventDefault();
