@@ -1,6 +1,7 @@
 // your code here
+const URL = "https://localhost:8080/"
 	const myUrl = document.getElementById("url");
-	myUrl.textContent = window.location.origin + window.location.pathname
+    myUrl.textContent = URL;
 document.getElementById("button").addEventListener("click", function (e) {
 	e.preventDefault();
 
@@ -11,7 +12,7 @@ document.getElementById("button").addEventListener("click", function (e) {
 		params.set("name",name);
 	if(year)
 		params.set("year",year);
-	const finalUrl = window.location.origin + window.location.pathname + ((name || year) ? "?": "")+ params.toString();
+	const finalUrl =  URL + ((name || year) ? "?": "")+ params.toString();
 	myUrl.textContent = finalUrl;
 	window.location.search = finalUrl;
 	
